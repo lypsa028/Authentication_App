@@ -14,14 +14,14 @@ export default function Register() {
     event.preventDefault();
     try {
       await signUp(email, password);
+      navigate("/profilepage");
+
+      //   const pwd = new FormData(event.target).get("pwd");
+      //   const confpwd = new FormData(event.target).get("confpwd");
+      //   if (confpwd === pwd) {
+      //   }
     } catch (err) {
       console.log("Error");
-    }
-
-    const pwd = new FormData(event.target).get("pwd");
-    const confpwd = new FormData(event.target).get("confpwd");
-    if (confpwd === pwd) {
-      navigate("/profilepage");
     }
   };
 

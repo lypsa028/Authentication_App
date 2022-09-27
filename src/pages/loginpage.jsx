@@ -1,9 +1,10 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./loginpage.scss";
 import mylogo from "../images/mylogo.png";
 import { gapi } from "gapi-script";
 import { useNavigate } from "react-router-dom";
 import useDataStore from "./useDataStore";
+import { useUserAuth } from "../context/UserAuthContext";
 
 export default function Loginpage() {
   const [saveUserName, saveUserEmail, saveUserPic, changeLoginStatus] =
@@ -13,6 +14,24 @@ export default function Loginpage() {
       state.saveUserPic,
       state.changeLoginStatus,
     ]);
+
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const { logIn } = useUserAuth();
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    try {
+      await logIn(email, password);
+      navigate("/profilepage");
+
+      //   const pwd = new FormData(event.target).get("pwd");
+      //   const confpwd = new FormData(event.target).get("confpwd");
+      //   if (confpwd === pwd) {
+      //   }
+    } catch (err) {
+      console.log("Error");
+    }
+  };
 
   const clientId =
     "782239294150-39nu17sk486jaaqhucqb4hvt0mbop9pn.apps.googleusercontent.com";
@@ -56,13 +75,14 @@ export default function Loginpage() {
       </div>
       <div className="login-f">
         <h4 className="headings">Welcome to My Authenticator App</h4>
-        <form className="login-form">
+        <form className="login-form" onSubmit={handleSubmit}>
           <div className="input-group">
             <input
               formControlName="email"
               type="email"
               className="form-control"
               placeholder="Enter Email or Mobile"
+              onChange={(e) => setEmail(e.target.value)}
               required
             />
             <div className="input-group-append">
@@ -77,6 +97,7 @@ export default function Loginpage() {
               type="password"
               className="form-control"
               placeholder="Password"
+              onChange={(e) => setPassword(e.target.value)}
               required
             />
             <div className="input-group-append">
