@@ -85,7 +85,7 @@ export default function Loginpage() {
         <img src={mylogo} alt="" className="mylogo" />
       </div>
       <div className="login-f">
-        <h4 className="headings">Welcome to My Authenticator App</h4>
+        <h4 className="headings">Welcome</h4>
         <form className="login-form" onSubmit={handleSubmit}>
           <div className="input-group">
             <input
