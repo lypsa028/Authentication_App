@@ -17,7 +17,7 @@ export default function Loginpage() {
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const { logIn } = useUserAuth();
+  const { logIn, googleSignIn } = useUserAuth();
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
@@ -28,6 +28,17 @@ export default function Loginpage() {
       //   const confpwd = new FormData(event.target).get("confpwd");
       //   if (confpwd === pwd) {
       //   }
+    } catch (err) {
+      console.log("Error");
+    }
+  };
+
+  const handleGoogleSignIn = async (e) => {
+    e.preventDefault();
+
+    try {
+      await googleSignIn();
+      navigate("/profilepage");
     } catch (err) {
       console.log("Error");
     }
@@ -116,7 +127,13 @@ export default function Loginpage() {
               </button>
             </div>
             <h5 className="subheadings">OR</h5>
-            <div className="signingoogle"></div>
+            <button
+              type="button"
+              onClick={handleGoogleSignIn}
+              className="login-with-google-btn"
+            >
+              Sign in with Google
+            </button>
           </div>
         </form>
       </div>

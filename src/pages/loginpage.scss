@@ -1,56 +1,58 @@
 .login-page {
-    align-items: flex-end;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 70% 100%;
-    display: flex;
-    flex-direction: row;
-    height: 100vh;
-    justify-content: center;
-
-  }
-.leftside{
-    height: 100%;
-    width: 50%;
-    align-self: center;
-    justify-self: center;
-    justify-content: center;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    background-color: #3466AA;
+  align-items: flex-end;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 70% 100%;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  justify-content: center;
 }
-.mylogo{
+.leftside {
+  height: 100%;
+  width: 50%;
+  align-self: center;
+  justify-self: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  background-color: #3466aa;
+}
+.mylogo {
   align-self: center;
 }
 .login-f {
-    height: 100%;
-    width: 50%;
-    align-self: center;
-    justify-self: center;
-    justify-content: center;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    background-color: white;
+  height: 100%;
+  width: 50%;
+  align-self: center;
+  justify-self: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  background-color: white;
 }
 .login-form {
-    text-align: center;
-    align-self: center;
-    height: max-content;
-    justify-content: center;
-    display: flex;
-    align-content: center;
-    flex-direction: column;
+  text-align: center;
+  align-self: center;
+  height: max-content;
+  justify-content: center;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
 }
-input[type=text], input[type=password], input[type=email], input[type=tel] {
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"] {
   border-radius: 25px;
   border: 1px solid #939393;
-  padding: 15px; 
+  padding: 15px;
   width: 300px;
   height: 2px;
   margin: 5px;
-  align-self: center;    
+  align-self: center;
 }
 .buttonlogin {
   background-color: #474545;
@@ -87,31 +89,31 @@ input[type=text], input[type=password], input[type=email], input[type=tel] {
   justify-self: center;
   align-self: center;
 }
-.googleimg{
+.googleimg {
   width: 200px;
 }
-.signingoogle{
+.signingoogle {
   display: flex;
   justify-content: center;
   background-color: transparent;
 }
-.headings{
+.headings {
   color: #474545;
   font-size: x-large;
   align-self: center;
 }
-.subheadings{
+.subheadings {
   color: #474545;
   font-size: x-large;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.fp{
+.fp {
   margin-left: 15%;
 }
 
 // Register******************
-.register-page{
+.register-page {
   align-items: flex-end;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -121,7 +123,7 @@ input[type=text], input[type=password], input[type=email], input[type=tel] {
   height: 100vh;
   justify-content: center;
 }
-.register-f{
+.register-f {
   height: 100%;
   width: 50%;
   align-self: center;
@@ -132,7 +134,7 @@ input[type=text], input[type=password], input[type=email], input[type=tel] {
   flex-direction: column;
   background-color: white;
 }
-.register-form{
+.register-form {
   text-align: center;
   align-self: center;
   height: max-content;
@@ -141,24 +143,24 @@ input[type=text], input[type=password], input[type=email], input[type=tel] {
   align-content: center;
   flex-direction: column;
 }
-.inputgroup2{
+.inputgroup2 {
   border-radius: 25px;
   border: 1px solid #939393;
-  padding: 15px; 
+  padding: 15px;
   width: 150px;
   height: 2px;
   margin: 5px;
   align-self: center;
 }
-.fname{
+.fname {
   width: 30% !important;
 }
-.lname{
+.lname {
   width: 30% !important;
 }
 
 // My Profile
-.profile-body{
+.profile-body {
   align-items: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -167,15 +169,15 @@ input[type=text], input[type=password], input[type=email], input[type=tel] {
   justify-content: center;
   height: calc(100vh - 100px);
 }
-.imgclass{
+.imgclass {
   margin-right: 5%;
 }
-.mypic{
+.mypic {
   width: 250px;
   height: 250px;
   margin-left: 20%;
 }
-.leftportion{
+.leftportion {
   height: 80%;
   width: 50%;
   align-self: center;
@@ -186,7 +188,7 @@ input[type=text], input[type=password], input[type=email], input[type=tel] {
   flex-direction: row;
   background-color: white;
 }
-.details{
+.details {
   height: 100%;
   width: 50%;
   justify-content: center;
@@ -205,7 +207,7 @@ input[type=text], input[type=password], input[type=email], input[type=tel] {
   align-items: center;
   justify-content: center;
 }
-.bodyclass{
+.bodyclass {
   min-height: 250px;
   max-height: 250px;
   display: flex;
@@ -216,16 +218,62 @@ input[type=text], input[type=password], input[type=email], input[type=tel] {
   margin-right: 30px;
   text-align: justify;
 }
-.mytitle{
+.mytitle {
   display: flex;
   align-items: center;
   justify-content: left;
   height: fit-content;
   font-size: 30px;
 }
-.mypara{
+.mypara {
   font-size: 20px;
   margin-top: 2px;
   margin-bottom: 5px;
   display: flex;
+}
+
+.login-with-google-btn {
+  transition: background-color 0.3s, box-shadow 0.3s;
+
+  padding: 12px 16px 12px 42px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 1px 1px rgba(0, 0, 0, 0.25);
+
+  color: #757575;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMTcuNiA5LjJsLS4xLTEuOEg5djMuNGg0LjhDMTMuNiAxMiAxMyAxMyAxMiAxMy42djIuMmgzYTguOCA4LjggMCAwIDAgMi42LTYuNnoiIGZpbGw9IiM0Mjg1RjQiIGZpbGwtcnVsZT0ibm9uemVybyIvPjxwYXRoIGQ9Ik05IDE4YzIuNCAwIDQuNS0uOCA2LTIuMmwtMy0yLjJhNS40IDUuNCAwIDAgMS04LTIuOUgxVjEzYTkgOSAwIDAgMCA4IDV6IiBmaWxsPSIjMzRBODUzIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNNCAxMC43YTUuNCA1LjQgMCAwIDEgMC0zLjRWNUgxYTkgOSAwIDAgMCAwIDhsMy0yLjN6IiBmaWxsPSIjRkJCQzA1IiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNOSAzLjZjMS4zIDAgMi41LjQgMy40IDEuM0wxNSAyLjNBOSA5IDAgMCAwIDEgNWwzIDIuNGE1LjQgNS40IDAgMCAxIDUtMy43eiIgZmlsbD0iI0VBNDMzNSIgZmlsbC1ydWxlPSJub256ZXJvIi8+PHBhdGggZD0iTTAgMGgxOHYxOEgweiIvPjwvZz48L3N2Zz4=);
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: 12px 11px;
+
+  &:hover {
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  &:active {
+    background-color: #eeeeee;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.25),
+      0 0 0 3px #c8dafc;
+  }
+
+  &:disabled {
+    filter: grayscale(100%);
+    background-color: #ebebeb;
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 1px 1px rgba(0, 0, 0, 0.25);
+    cursor: not-allowed;
+  }
+}
+
+body {
+  text-align: center;
+  padding-top: 2rem;
 }
